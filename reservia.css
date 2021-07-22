@@ -1,0 +1,388 @@
+
+
+
+
+
+
+
+
+/* PARAMETRES DU HEADER */
+
+/* Le conteneur */
+
+.containerheader {
+
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logohaut {
+cursor: pointer;    
+}
+
+.headernav {
+    display : flex;
+    margin-right: 3%;
+}
+
+header ul {
+    display : flex;
+    list-style: none;
+    padding : 0;
+    margin:0;
+    margin-left: auto;
+    color: #0065fc;
+}
+
+header ul li a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 21px;
+    color: #0065fc;
+}
+
+header ul li {
+    margin-left: 35px;    
+}
+
+a {
+    text-decoration:none ;
+    color: black;
+}
+
+.inscrire a {
+    color: #0065fc;
+    margin-right: 0%;
+    }
+.inscrire a:hover {
+    border-top:2px solid #0065fc;
+    padding-top: 21px;
+    }
+
+.inscrire {
+    padding-left: 35px;
+}
+
+/* Le texte d'accroche*/
+
+.subtext {
+    margin-bottom: -35px;
+}
+
+/*Formulaire de recherche*/
+.logosearch {
+    display: inline-flex;
+    margin: 15px;
+    align-items: center;
+}
+
+button {
+    background-color: #0065fc;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 -50px;
+}
+
+.iconemap {
+    font-size: 25px;
+    background-color: #F2F2F2;
+    border-radius: 1rem 0 0 1rem;
+    padding: 10px 10px;
+    width: 30px;
+    text-align: center;
+    
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Raleway" , "sans-serif";
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5em;
+    width: 60%;
+    height: 50px;
+    font-size: 15px;
+}
+
+.boutonderecherche {
+
+    border-radius: 0px 18px 18px 0px;
+    padding: 15px;
+    background-color: #0065fc;
+    color: white;
+    position: relative;
+    right: 43px;
+
+}
+.loupelogo i {
+    display: none;
+}
+
+/*Mise en forme filtres*/
+
+.titrefiltres {
+    font-size: 1.3em;
+    margin: 0 20px 0 0;
+
+}
+
+.titre {
+    font-family: "Raleway", "Sans serif";
+    font-weight: bold;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
+    cursor: pointer;
+
+}
+
+.barreFiltre:hover {
+    background: #0065fc;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+.barreFiltre {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 2em;
+    border: 2px solid #DEEBFF;
+    border-radius: 2em;
+    font-weight: bold;
+
+}
+.filtres {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.imagefiltre {
+    padding: 15px 15px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.fas {
+
+    color: #0065fc;
+}
+
+.fa-map-marker-alt {
+    color: black;
+
+}
+
+/*Mise en forme ligne information*/
+
+.info {
+    display: flex;
+
+}
+.fa-info {
+    text-align: center;
+    color: #0065fc;
+    border-radius: 100%;
+    height: 33px;
+    width: 33px;
+    border: solid 1px #DEEBFF;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.infotext {
+    padding-left: 10px;
+
+}
+
+/*Mise en forme partie hébergements et populaire*/
+
+.hebergementetpop {    
+    display: flex;
+    margin: 25px 0 50px;
+
+}
+
+/* Partie hébergements*/
+
+#Hebergements {
+    /*background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 62%;
+    padding: 20px;
+    margin: 0 25px 0 0;*/
+
+    width: 250%;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+.titresection {
+    display: flex;
+
+}
+
+.hebergementmarseille {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    width: 130;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  
+ }
+
+ .hotel {
+    /*display: block;
+    padding: 5px;
+    box-sizing: border-box;*/
+    width: 226px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 25px;
+    margin: 15px;
+    box-shadow: 0px 0px 5px 0px;
+    transform: scale(1);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    
+
+ }
+
+
+.hotelimage {
+    width: 226px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 25px 25px 0 0;
+    height: 130px;
+
+}
+
+/*Partie les plus populaires*/
+
+#pluspopulaires{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.hebergementspop {
+    margin-top: 50px;
+
+}
+
+.hotelpop {
+    display: flex;
+    background: #fff;
+    margin-top: 30px;
+    height: 140px;
+    padding: 5px;
+    border-radius: 27px 20px 20px 27px;
+    box-shadow: 1px 1px 20px 1px;
+    transform: scale(1);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.popimage {
+    margin: 5px;
+    height: 130px;
+    width: 120px;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 20px 0 0px 20px;
+}
+
+.titresection {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+        
+}
+
+.fa-chart-line {    
+    font-weight: 900;
+    font-size: 25px;
+    color: black; 
+
+}
+
+/*Partie activités*/
+
+#Activites {
+
+
+
+}
+
+
+
+.containerActivites {
+   
+
+}
+
+.blocActivite Activite {
+   /* margin: 5px;
+    width: 790px;
+    height: 368px;
+   border-radius: 15px 15px 0px 0px;*/
+   margin: 15px;
+    border-radius: 15px 15px 15px 15px;
+    transform: scale(1);
+    transition: -0.8s ease-in-out;
+    cursor: pointer;
+
+}
+
+.nomactivite {
+     
+margin: 5px;
+width: 368px;
+height: 790px;   
+margin-top: auto;
+border-radius: 15px 15px 15px 15px;
+transform: scale(1);
+transition: .2s ease-in-out;
+cursor: pointer;
+
+
+
+
+
+
+
+
+
+   
